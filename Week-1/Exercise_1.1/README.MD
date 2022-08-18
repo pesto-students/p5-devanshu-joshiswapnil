@@ -6,9 +6,8 @@ Web browsers are primarily used to display and access websites on the internet, 
 
 A web browser’s primary function is to render HTML, the code that is used to design or markup web pages. When a browser loads a web page, it processes the HTML, which may contain text, links, and references to images and other items like CSS and JavaScript functions. The browser then renders these objects in the browser window after processing them. A web browser (also known as a browser) is a software application that allows you to access information on the World Wide Web. When a user requests a web page from a specific website, the web browser requests the content from a web server and shows it on the user’s device.
 
-B)	HIGH LEVEL COMPONENTS OF A BROWSER.
+B)	HIGH LEVEL COMPONENTS OF A BROWSER :
 
-Components of a Web Browser
 1. User Interface
 It is an environment allowing users to use certain features like search bar, refresh button, menu, bookmarks, etc.
 
@@ -25,7 +24,8 @@ The cookies store information as the data store is an uniform layer that the bro
 5. JavaScript Interpreter
 It allows conversion of JavaScript code in a document and the executes it. Then the engine shows the translation on the screen to the users.
 
-C)	RENDERING ENGINE AND ITS USE.
+C)	RENDERING ENGINE AND ITS USE:
+
 Role of Rendering Engine:
 Once a user requests a particular document, the rendering engine starts fetching the content of the requested document. This is done via the networking layer. The rendering engine starts receiving the content of that specific document in chunks of 8 KBs from the networking layer. After this, the basic flow of the rendering engine begins.
 
@@ -38,8 +38,9 @@ Further, the render tree goes through the layout process. When a render tree is 
 The final step is to paint the screen, wherein the render tree is traversed, and the renderer’s paint() method is invoked, which paints each node on the screen using the UI backend layer.
 As discussed earlier, every browser has its own unique rendering engine. So naturally, every browser has its own way of interpreting web pages on a user’s screen.
 
-D)	PARSERS (HTML, CSS, ETC)
-So we have HTML content at the beginning which goes through a process called tokenization, tokenization is a common process in almost every programming language where code is split into several tokens which are easier to understand while parsing. This is where the HTML's parser understands which is the start and which is the end of the tag, which tag it is and what is inside the tag.
+D)	PARSERS (HTML, CSS, ETC) : 
+
+The HTML content at the beginning which goes through a process called tokenization, tokenization is a common process in almost every programming language where code is split into several tokens which are easier to understand while parsing. This is where the HTML's parser understands which is the start and which is the end of the tag, which tag it is and what is inside the tag.
 
 Now we know, html tag starts at the top and then the head tag starts before the html ends so we can figure out that the head is inside html and create a tree out of it.
 Just like HTML, CSS goes through a similar process where we have the CSS text and then the tokenization of CSS to eventually create something called a CSSOM or CSS Object Model.
